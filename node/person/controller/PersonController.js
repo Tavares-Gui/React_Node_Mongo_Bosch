@@ -1,4 +1,4 @@
-const Person = require('../models/Person');
+const Person = require('../model/Person');
 class PersonController {
     static async create(req, res) {
         const { name, lastname, salary } = req.body;

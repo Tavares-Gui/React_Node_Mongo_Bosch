@@ -1,8 +1,7 @@
 const express = require('express');
-const auth = require('../routes/auth');
+const person = require('../person');
 
-module.exports = function(app) {
-    app
-        .use(express.json())
-        .use('/api/auth', auth)
+module.exports = function (app) {
+    app.use(express.json());
+    app.use('/api/person', person);
 }
